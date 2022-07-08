@@ -102,9 +102,9 @@ public class RaindropsTest
 
     }
 
-    @DisplayName("User Example Tests")
+    @DisplayName("Owner's example tests")
     @Nested
-    class UserExampleTests {
+    class OwnerExampleTests {
 
         @DisplayName("Check 28 returns 'Plong'")
         @Test
