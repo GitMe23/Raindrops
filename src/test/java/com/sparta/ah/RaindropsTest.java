@@ -101,4 +101,31 @@ public class RaindropsTest
 
 
     }
+
+    @DisplayName("User Example Tests")
+    @Nested
+    class UserExampleTests {
+
+        @DisplayName("Check 28 returns 'Plong'")
+        @Test
+        void check28ReturnsPlong() {
+            Assertions.assertEquals("Plong", Raindrops.getRaindrops(28));
+        }
+
+        @DisplayName("Check 30 returns 'PlingPlang'")
+        @Test
+        void check30ReturnsPlingPlang() {
+            Assertions.assertEquals("PlingPlang", Raindrops.getRaindrops(30));
+        }
+
+        @DisplayName("Check 34 returns '34'")
+        @Test
+        void check34Returns34AsAString() {
+            Assertions.assertEquals("34", Raindrops.getRaindrops(34));
+        }
+
+    }
+
+
+
 }
