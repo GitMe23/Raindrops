@@ -2,12 +2,16 @@ package com.sparta.ah;
 
 // Please refer to readme.md for details
 
-public class RaindropsApp
+public class Raindrops
 {
 
     public static String getRaindrops(int userNumber) {
 
         StringBuilder answer = new StringBuilder();
+
+        if (userNumber == 0) {
+            return "0";
+        }
 
         if(userNumber % 3 == 0){
             answer.append("Pling");
