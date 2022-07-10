@@ -94,7 +94,7 @@ public class RaindropsTest
         }
 
         @Test
-        @DisplayName("Check input of max integer")
+        @DisplayName("Check input of min integer")
         void checkInputOfMinInteger() {
             Assertions.assertEquals("-2147483648", Raindrops.getRaindrops(Integer.MIN_VALUE));
         }
